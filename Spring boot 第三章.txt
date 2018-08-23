@@ -1,0 +1,14 @@
+第三章 spring高级话题
+	3.1 Spring Aware 
+		3.1.1 点睛
+			Spring的依赖注入的最大亮点就是你所有的bean对spring容器的存在是没有意识的，bean之间的耦合度很低
+			spring Aware本来就是spring设计用来框架内部使用的，若使用了spring Aware，你的bean将会和spring框架耦合
+			接口
+				1.beanNameAware：获得到容器中bean的名称
+				2.BeanFactoryAware：获得当前bean factory，这样可以调用容器的服务
+				3.ApplicaContextAware*:当前的application context ，这样可以调用容器的服务
+				4.MessageSourceAware ：获得message source,这样可以获得文本信息
+				5.ApplicationEventPublisherAware：应用时间发布器，可以发布事件，2.5节的DemoPublisher也可实现这个接口来发布事件
+				6.ResourceLoaderAware：获得资源加载器，可以获得外部资源文件
+				
+	

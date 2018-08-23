@@ -1,0 +1,5 @@
+Spring MVC基础
+	4.1 spring MVC 概述
+		MVC三层架构模式  model + view + controller 数据模型，视图，控制器
+		MVC只存在展示层，数据模型 Model类，V 包括JSP，freeMarker,Velocity,Thymeleaf,Tile等，c 就是@Controller注释的类
+		
